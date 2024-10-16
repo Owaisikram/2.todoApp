@@ -1,0 +1,128 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font family for the page */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #main_container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  #input:focus {
+    border-color: #5f9ea0;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    background-color: #5f9ea0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4b8f7f;
+  }
+  
+  #result {
+    margin-top: 20px;
+  }
+  
+  #mylist {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #mylist li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  #mylist li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #mylist li::before {
+    content: "\2022"; /* Bullet point */
+    color: #5f9ea0;
+    font-size: 1.5em;
+    /* margin-right: 10px; */
+  }
+  
+  @media (max-width: 480px) {
+    #main_container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    #form {
+      flex-direction: column;
+    }
+  
+    #input {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
